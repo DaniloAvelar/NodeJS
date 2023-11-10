@@ -1,32 +1,23 @@
 'use strict'
 
+const app = require('../src/app');
 const http = require('http');
 const debug = require('debug')('nodestr:server');
-const express = require('express');
 
-const app = express();
 //Chamando a função Normalize
-//const port = 3000;
-
 const port = normalizePort(process.env.PORT || '3000');
+
 app.set('port', port);
 
 const server = http.createServer(app);
-const router = express.Router();
-
-const route = router.get('/', (req, res, next) => {
-    res.status(200).send({
-        title: "Node Store API",
-        version: "0.0.1"
-    });
-});
-
-app.use('/', route);
 
 server.listen(port);
 
 //Chamando a função ***onError***
 server.on('error', onError);
+
+//Chamando a função onListening
+server.on('listening', onListening);
 
 console.log('API rodando na porta ' + port);
 
@@ -45,7 +36,7 @@ function normalizePort(val) {
     return false;
 }
 
-//Função para gerenciamento de erros
+// Função para gerenciamento de erros
 function onError(error) {
     if (error.syscall !== 'listen') {
         throw error;
@@ -68,6 +59,14 @@ function onError(error) {
 
 }
 
+// Função para startar o debug
+function onListening() {
+    const addr = server.address();
+    const bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+}
 
 
 
