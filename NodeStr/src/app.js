@@ -2,8 +2,11 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose')
 const app = express();
 const router = express.Router();
+
+mongoose.connect('mongodb+srv://daavelar:aKdzjISufs6FyqF2@nodestr.vnrrpwo.mongodb.net/?retryWrites=true&w=majority')
 
 //Carrega Rotas
 const index = require('./routes/index');
