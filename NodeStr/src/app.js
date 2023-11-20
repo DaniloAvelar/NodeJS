@@ -8,6 +8,9 @@ const router = express.Router();
 
 mongoose.connect('mongodb+srv://daavelar:aKdzjISufs6FyqF2@nodestr.vnrrpwo.mongodb.net/?retryWrites=true&w=majority')
 
+//Carregar Modelos
+const Produto = require('./models/produto')
+
 //Carrega Rotas
 const index = require('./routes/index');
 const produtos = require('./routes/produtos');
