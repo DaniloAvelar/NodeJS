@@ -15,6 +15,6 @@ IP:   201.87.111.181/32
 ==============================================================================================
 
 3T
-URL: https://s3t-auth.studio3t.com/?client_id=6e7ojm6h57kok32t1h6i5msj6&redirect_uri=https://auth.studio3t.com/authorize-post&authorization_code=263a3e4c-7369-44e5-ba44-6273a105631e&state=eyJvcmlnaW5hbFJlZGlyZWN0VXJpIjoiaHR0cHM6Ly9saWNlbnNlLnN0dWRpbzN0LmNvbS9hcHAtYXV0aGVudGljYXRlZD9zM3RfY2FsbGJhY2s9aHR0cCUzQSUyRiUyRjEyNy4wLjAuMSUzQTUwMzMwJTJGYXV0aGVudGljYXRlZCZzM3RfdmVyc2lvbj0yMDIzLjguMCJ9
+URL: mongodb+srv://daavelar:<password>@nodestr.vnrrpwo.mongodb.net/?retryWrites=true&w=majority
 Login: da.avelar@hotmail.com
 Pass: 3933Tt403#
