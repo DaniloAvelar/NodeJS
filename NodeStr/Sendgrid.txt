@@ -1,0 +1,6 @@
+Sendgrid:
+
+URL: https://sendgrid.com/free/
+
+User: da.avelar@hotmail.com
+Pass: 393Sendgrid#403Ape

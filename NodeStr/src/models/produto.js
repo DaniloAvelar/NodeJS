@@ -32,7 +32,12 @@ const schema = new Schema({
     tags: [{
         type: String,
         required: true,
-    }]
+    }],
+    imagem: {
+        type: String,
+        required: true,
+        trim: true
+    },
 });
 
 module.exports = mongoose.model('Produto', schema)
